@@ -3,7 +3,7 @@
 FILE=$1
 if [ "$1"X == "X" ]
 then
-        echo Usage: $0 file_generated_by_dump_all.sql
+        echo Usage: $0 file_generated_by_dump.sql
         exit
 fi
 for BD in $(cat $FILE | grep "^.. Current Database: \`" | cut -d\` -f2)
